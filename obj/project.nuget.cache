@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ikaFLAfabONev82vePnNSHedrCtXIDjnhRwb/2p1Ofc11Sd/DUWYu00CyLNNjkDU7naT4ETB+9TgptFhMI6R1w==",
+  "dgSpecHash": "ZzRj1onK5rl61x3hoRAIp0niKAI2yHBbgTwPPy+SyrC+6KR0UWb0zSfm9m0L/w6anyWFDkzzRtZO58+qHeWo9g==",
   "success": true,
   "projectFilePath": "C:\\Users\\duvan\\Archivos\\CampusLand\\Programacion\\Skills\\netcore\\csharp\\linq02\\ironmongery\\ironmongery.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\duvan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

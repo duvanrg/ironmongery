@@ -1,0 +1,14 @@
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\bin\Debug\net7.0\ironmongery.exe
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\bin\Debug\net7.0\ironmongery.deps.json
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\bin\Debug\net7.0\ironmongery.runtimeconfig.json
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\bin\Debug\net7.0\ironmongery.dll
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\bin\Debug\net7.0\ironmongery.pdb
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ironmongery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ironmongery.AssemblyInfoInputs.cache
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ironmongery.AssemblyInfo.cs
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ironmongery.csproj.CoreCompileInputs.cache
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ironmongery.dll
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\refint\ironmongery.dll
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ironmongery.pdb
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ironmongery.genruntimeconfig.cache
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ref\ironmongery.dll
