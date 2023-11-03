@@ -12,3 +12,7 @@ C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\iro
 C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ironmongery.pdb
 C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ironmongery.genruntimeconfig.cache
 C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ref\ironmongery.dll
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ironmongery.csproj.AssemblyReference.cache
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\obj\Debug\net7.0\ironmongery.csproj.CopyComplete
+C:\Users\duvan\Archivos\CampusLand\Programacion\Skills\netcore\csharp\linq02\ironmongery\bin\Debug\net7.0\ConsoleTables.dll
