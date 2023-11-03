@@ -1,3 +1,5 @@
+using ConsoleTables;
+
 namespace ironmongery.Entities
 {
     public class Invoice : DetailInvoice
@@ -41,7 +43,6 @@ namespace ironmongery.Entities
             _invoice.IdClient = Convert.ToInt32(Console.ReadLine());
             while (run)
             {
-                int cont = 1;
                 Console.WriteLine($"Id Producto: ");
                 int Idprod = Convert.ToInt32(Console.ReadLine());
                 Product product = listproducts.FirstOrDefault(p => p.Id == Idprod);
@@ -49,12 +50,18 @@ namespace ironmongery.Entities
                 {
                     Console.WriteLine($"Cantidad: ");
                     int Quantity = Convert.ToInt32(Console.ReadLine());
+                    if (product.Quantity < Quantity)
+                    {
+                        var NotQuantity = new ConsoleTable($"No hay existencias suficientes del producto : {product.Name}");
+                        break;
+                    }
+                    product.Quantity -= Quantity;
                     double valor = Quantity * product.PriceUnit;
                     _invoice.TotalInvoice += valor;
 
                     ListDetails.Add(new DetailInvoice
                     {
-                        Id = cont,
+                        Id = Convert.ToInt32(Convert.ToString(Idprod) + Convert.ToString(NroInvoice)),
                         NroInvoices = NroInvoice,
                         IdProd = product.Id,
                         Quantity = Quantity,
@@ -72,7 +79,6 @@ namespace ironmongery.Entities
                 {
                     run = false;
                 }
-                cont ++;
             }
             _invoice.ListDetails = ListDetails;
             listInvoices.Add(_invoice);
