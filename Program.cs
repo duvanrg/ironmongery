@@ -104,14 +104,15 @@ internal class Program
             {
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("Registrar Informacion");
-                Console.WriteLine("1. Listar Productos");
-                Console.WriteLine("2. Productos Por Agotarse");
-                Console.WriteLine("3. Productos a Comprar");
-                Console.WriteLine("4. Listar Facturas Mensual");
-                Console.WriteLine("5. Productos Factura");
-                Console.WriteLine("6. Valor En Inventario");
-                Console.WriteLine("7. Regresar");
+                var tableQuery = new ConsoleTable("#","Menu Consultas");
+                tableQuery.AddRow("1","Listar Productos")
+                            .AddRow("2","Productos Por Agotarse")
+                            .AddRow("3","Productos a Comprar")
+                            .AddRow("4","Listar Facturas Mensual")
+                            .AddRow("5","Productos Factura")
+                            .AddRow("6","Valor En Inventario")
+                            .AddRow("7","Regresar");
+                
                 byte opc = Convert.ToByte(Console.ReadLine());
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                 switch (opc)

@@ -19,12 +19,7 @@
         "Quantity": 3,
         "Value": 75.0
       }
-    ],
-    "Id": 0,
-    "NroInvoices": 0,
-    "IdProd": 0,
-    "Quantity": 0,
-    "Value": 0.0
+    ]
   },
   {
     "NroInvoice": 2,
@@ -46,12 +41,7 @@
         "Quantity": 6,
         "Value": 30.0
       }
-    ],
-    "Id": 0,
-    "NroInvoices": 0,
-    "IdProd": 0,
-    "Quantity": 0,
-    "Value": 0.0
+    ]
   },
   {
     "NroInvoice": 3,
@@ -73,11 +63,6 @@
         "Quantity": 5,
         "Value": 25.0
       }
-    ],
-    "Id": 0,
-    "NroInvoices": 0,
-    "IdProd": 0,
-    "Quantity": 0,
-    "Value": 0.0
+    ]
   }
 ]

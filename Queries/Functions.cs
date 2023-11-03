@@ -1,3 +1,4 @@
+using ConsoleTables;
 using ironmongery.Entities;
 using Newtonsoft.Json;
 
@@ -5,28 +6,32 @@ namespace ironmongery.Queries
 {
     public class Functions
     {
+        // 1. LISTAR LOS PRODUCTOS DEL INVENTARIO
         public void ListProducts(IList<Product> listProducts)
         {
             var _products = (from p
                             in listProducts
                              select p);
-            // _products.ForEach(x => Console.WriteLine($"Nombre: {x.Name}, precio Unidad: {x.PriceUnit}, Cantidad: {x.Quantity}"));
+            var tableProducts = new ConsoleTable("Nombre","Precio Unidad","Cantidad");
             foreach (var item in _products)
             {
-                Console.WriteLine($"Nombre: {item.Name}, precio Unidad: {item.PriceUnit}, Cantidad: {item.Quantity}");
+                tableProducts.AddRow($"{item.Name}", $"{item.PriceUnit}",$"{item.Quantity}");
             }
+            tableProducts.Write(Format.Alternative);
         }
-
+        // 2. LISTAR LOS PRODUCTOS QUE ESTAN A PUNTO DE AGOTARSE. CANTIDAD<STOCKMIN
         public void ProductRecover(IList<Product> listProducts)
         {
             var _products = (from p
                             in listProducts
                              where p.Quantity < p.StockMin
                              select p);
+            var tableRecover = new ConsoleTable("Nombre","Precio Unidad","Cantidad");
             foreach (var item in _products)
             {
-                Console.WriteLine($"Nombre: {item.Name}, precio Unidad: {item.PriceUnit}, Cantidad: {item.Quantity}");
+                tableRecover.AddRow($"{item.Name}",$" {item.PriceUnit}",$" {item.Quantity}");
             }
+            tableRecover.Write(Format.Alternative);
         }
         // 3. LISTAR LOS PRODUCTOS QUE SE DEBEN COMPRAR Y QUE CANTIDAD DE DEBE COMPRAR LA CANTIDAD A COMPRAR SE OBTIENE TENIENDO EN CUENTA LA DIFERENCIA ENTRE LA CANTIDAD Y EL STOCKMAX.
         public void ProductsForBuy(IList<Product> listProducts)
@@ -39,10 +44,12 @@ namespace ironmongery.Queries
                                     p.PriceUnit,
                                     QuantityToBuy = p.StockMax - p.Quantity
                                 };
+            var tableBuys = new ConsoleTable("Nombre","Precio","Cantidad a Comprar");
             foreach (var product in productsToBuy)
             {
-                Console.WriteLine($"Nombre: {product.Name}, Precio: {product.PriceUnit}, Cantidad a comprar: {product.QuantityToBuy}");
+                tableBuys.AddRow($"{product.Name}",$"{product.PriceUnit}",$"{product.QuantityToBuy}");
             }
+            tableBuys.Write(Format.Alternative);
         }
 
         // 4. LISTAR EL TOTAL DE FACTURAS DEL MES DE ENERO DEL 2023.
@@ -52,10 +59,12 @@ namespace ironmongery.Queries
                                 in listInvoices
                                  where I.Date.Month == 1
                                  select I;
+            var tableJanuary = new ConsoleTable("Nro Factura","Fecha","id Client","valor");
             foreach (var item in invoiceJanuary)
             {
-                Console.WriteLine($"Nro Factura: {item.NroInvoice}, Fecha= {item.Date} id Client: {item.IdClient}, valor: {item.TotalInvoice}");
+                tableJanuary.AddRow($"{item.NroInvoice}",$"{item.Date}",$"{item.IdClient}",$"{item.TotalInvoice}");
             }
+            tableJanuary.Write(Format.Alternative);
         }
         // 5. LISTAR LOS PRODUCTOS VENDIDOS EN UNA DETERMINADA FACTURA.
         public void ListProductsInvoice(IList<Invoice> listInvoices, IList<Product> listProducts)
@@ -73,26 +82,23 @@ namespace ironmongery.Queries
                                             Quantity = detail.Quantity,
                                             Value = detail.Value
                                         };
-
+            Console.Clear();
+            var tableProductsInvoice = new ConsoleTable("Producto","Cantidad","Valor");
             foreach (var product in productsSoldInInvoice)
             {
-                Console.WriteLine($"Producto: {product.ProductName}, Cantidad: {product.Quantity}, Valor: {product.Value}");
+                tableProductsInvoice.AddRow($"{product.ProductName}",$"{product.Quantity}",$"{product.Value}");
             }
+            tableProductsInvoice.Write(Format.Alternative);
         }
 
         // 6. CALCULAR EL VALOR TOTAL DEL INVENTARIO.
         public void ValueInventory(IList<Product> listProducts)
         {
-            // double totalValue = 0;
             var valueInInventory = from p
                                     in listProducts
                                     select new { ValueProducts =  p.PriceUnit * p.Quantity};
-            // foreach (var item in valueInInventory)
-            // {
-            //     totalValue += item.ValueProducts;
-            // }
-            // Console.WriteLine($"el valor en el inventario es de: {totalValue}");
-            Console.WriteLine($"el valor en el inventario es de: {valueInInventory.Sum(p => p.ValueProducts)}");
+            var tableResult = new ConsoleTable("Valor Inventario",$"{valueInInventory.Sum(p => p.ValueProducts)}");
+            tableResult.Write(Format.Alternative);
         }
         public IList<T> SaveData<T>(IList<T> list, string filename)
         {
