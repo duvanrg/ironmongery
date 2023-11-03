@@ -1,0 +1,83 @@
+[
+  {
+    "NroInvoice": 1,
+    "Date": "2023-01-15T00:00:00",
+    "IdClient": 1,
+    "TotalInvoice": 150.0,
+    "ListDetails": [
+      {
+        "Id": 1,
+        "NroInvoices": 1,
+        "IdProd": 1,
+        "Quantity": 5,
+        "Value": 75.0
+      },
+      {
+        "Id": 2,
+        "NroInvoices": 1,
+        "IdProd": 2,
+        "Quantity": 3,
+        "Value": 75.0
+      }
+    ],
+    "Id": 0,
+    "NroInvoices": 0,
+    "IdProd": 0,
+    "Quantity": 0,
+    "Value": 0.0
+  },
+  {
+    "NroInvoice": 2,
+    "Date": "2023-01-20T00:00:00",
+    "IdClient": 2,
+    "TotalInvoice": 130.0,
+    "ListDetails": [
+      {
+        "Id": 3,
+        "NroInvoices": 2,
+        "IdProd": 2,
+        "Quantity": 4,
+        "Value": 100.0
+      },
+      {
+        "Id": 4,
+        "NroInvoices": 2,
+        "IdProd": 3,
+        "Quantity": 6,
+        "Value": 30.0
+      }
+    ],
+    "Id": 0,
+    "NroInvoices": 0,
+    "IdProd": 0,
+    "Quantity": 0,
+    "Value": 0.0
+  },
+  {
+    "NroInvoice": 3,
+    "Date": "2023-11-03T11:56:46.7617762-05:00",
+    "IdClient": 3,
+    "TotalInvoice": 115.0,
+    "ListDetails": [
+      {
+        "Id": 5,
+        "NroInvoices": 3,
+        "IdProd": 1,
+        "Quantity": 6,
+        "Value": 90.0
+      },
+      {
+        "Id": 6,
+        "NroInvoices": 3,
+        "IdProd": 3,
+        "Quantity": 5,
+        "Value": 25.0
+      }
+    ],
+    "Id": 0,
+    "NroInvoices": 0,
+    "IdProd": 0,
+    "Quantity": 0,
+    "Value": 0.0
+  }
+]

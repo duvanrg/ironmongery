@@ -1,0 +1,58 @@
+[
+  {
+    "Id": 1,
+    "Name": "Martillo",
+    "PriceUnit": 15.0,
+    "Quantity": 150,
+    "StockMin": 20,
+    "StockMax": 200
+  },
+  {
+    "Id": 2,
+    "Name": "Pala",
+    "PriceUnit": 25.0,
+    "Quantity": 10,
+    "StockMin": 15,
+    "StockMax": 150
+  },
+  {
+    "Id": 3,
+    "Name": "Broca",
+    "PriceUnit": 5.0,
+    "Quantity": 60,
+    "StockMin": 10,
+    "StockMax": 250
+  },
+  {
+    "Id": 4,
+    "Name": "Carretilla",
+    "PriceUnit": 500.0,
+    "Quantity": 25,
+    "StockMin": 8,
+    "StockMax": 60
+  },
+  {
+    "Id": 5,
+    "Name": "Taladro",
+    "PriceUnit": 60.0,
+    "Quantity": 20,
+    "StockMin": 10,
+    "StockMax": 30
+  },
+  {
+    "Id": 6,
+    "Name": "pata de cabra",
+    "PriceUnit": 30.0,
+    "Quantity": 15,
+    "StockMin": 5,
+    "StockMax": 40
+  },
+  {
+    "Id": 7,
+    "Name": "paladraca",
+    "PriceUnit": 60.0,
+    "Quantity": 10,
+    "StockMin": 10,
+    "StockMax": 30
+  }
+]
